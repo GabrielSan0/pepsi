@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 1000vh;
+    width: 100%;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+.navbar{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    text-transform: uppercase;
+    background-color: #0065c3;
+    padding: 10px;
+    color: white;
+    position: relative;
+    position: fixed;
+    width: 98%;
+    top: 0;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.navbar-item{
+    margin-left: 20px ;
+    cursor: pointer; /* cambia el mouse */
+    display: inline-block;
+}
+
+.navbar-right .navbar-item{
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 5px 25px;
+
+}
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.product-item img{
+    display: inline-block;
+    max-width: 60%;
+    padding: 20px;
+}
+.product-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+.imaginos img:hover{
+  -webkit-transform: rotate(360deg);transform: rotate(360deg);
+}
+.product-item-column{
+    flex-direction: column;
+}
+.product-text{
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+.product-button{
+    color: white;
+    border: 3px solid white;
+    border-radius: 30px ;
+    padding: 5px 35px;
+
+}
+.product-button:hover{
+    color: #0065c3;
+    background-color: white;
+}
+.button-menu{
+  display: none;
+  color: white;
+  background-color: #0065c3;
+    border: 3px solid white;
+    border-radius: 30px ;
+    padding: 5px 35px;
+}
+/* responsive */
+/* para 1080px*/
+@media (max-width: 1080px){
+  .navbar-left{
+justify-content: space-around;
+  }
+  .product-text{
+    font-size: 25px;
+
+    }
+  .cambia{
+    font-size: 55px;
+
+  }
+  .navbar{
+    display: flex;
+  }
+  .button-menu{
+    display: inline-block;
+  }
+
+  .desaparece{
+    display: none;
+  }
+}
+
+@media (max-width: 894px){
+
+/*falata colocar ensima de las letras*/
+.oscuro{
+  display: none;
+}
+  .cambia{
+    font-size: 40px;
+
+    font-weight: 150px;
+    margin: 15px;
+  }
+  .maquina{
+    font-size: 20px;
+    font-weight: 100%;
+    margin: 20px;
+    width: 300px;
+    }
+  .product-button{
+    text-align: center;
+    padding: 5px 2px;
+    font-size: 15px;
+  }
+
+
+  .lisa{
+    font-size: 10px;
+  }
+  .botonsito{
+
+    padding: 2px 10px;
+    margin: 0s;
+    font-size: 8px;
+  }
+  .losa{
+   background: image("https://www.pepsi.com/en-us/uploads/images/sodashop-22/cream-soda@2x.png");
+   background-repeat: no-repeat;
+
+    background-size: contain;
+    background-position: left top;
+    background-position-x: left;
+    background-position-y: top;
+    z-index: 1;
+  }
+}
+
+
+/*desde los 375*/
+@media (max-width: 375px){
+  .cambios{
+
+display: none;
+/*falata colocar ensima de las letras*/
+  }
+  .cambia{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 150px;
+    margin: 15px;
+  }
+  .maquina{
+    font-size: 20px;
+    font-weight: 100%;
+    margin: 20px;
+    width: 300px;
+    }
+  .product-button{
+    text-align: center;
+    padding: 5px 2px;
+    font-size: 15px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  .lisa{
+    font-size: 10px;
+  }
+  .botonsito{
+
+    padding: 2px 10px;
+    margin: 0s;
+    font-size: 8px;
+  }
+  .losa{
+   background: image("https://www.pepsi.com/en-us/uploads/images/sodashop-22/cream-soda@2x.png");
+   background-repeat: no-repeat;
+
+    background-size: contain;
+    background-position: left top;
+    background-position-x: left;
+    background-position-y: top;
+    z-index: 1;
+  }
+
+}
+h2{
+  font-family: Cervo Neue Black, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 55px;
+  margin: 0;
+  text-align: center;
+  color: #0065c3;
+}
+.semi-footer{
+  padding: 0;
+}
+.imganes-seguir{
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.imageni img{
+  width: 250px;
+  max-width: 100%;
+}
+.imageni img:hover{
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+  cursor: pointer;
+  filter: grayscale(60%);
+
+}
+
